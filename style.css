@@ -117,7 +117,6 @@ hr {
   margin: 1.5rem 0;
 }
 
-/* === MAIN IMAGE === */
 .main-image {
   display: block;
   max-width: 400px;
@@ -128,7 +127,16 @@ hr {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* === PHOTOS LIST (Concours) === */
+.amphibien {
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 .photos-list {
   margin-top: 2rem;
 }
@@ -151,7 +159,6 @@ hr {
   margin-bottom: 0.8rem;
 }
 
-/* === BUTTONS === */
 button {
   background: #1e3a5f;
   color: white;
@@ -210,6 +217,12 @@ footer hr {
   }
 
   .main-image {
+    margin: 1rem auto;
+    border-radius: 2px;
+  }
+  
+  .amphibien {
+    max-width: 300px;
     margin: 1rem auto;
     border-radius: 2px;
   }
