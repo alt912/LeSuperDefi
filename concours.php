@@ -7,6 +7,7 @@ if (!file_exists($dataFile)) {
             [
                 'id' => 1,
                 'title' => 'Coucher de soleil sur la Motte',
+                'urlImage' => 'https://www.tourisme-gironde.fr/wp-content/uploads/2025/05/couchers-de-soleil-aquitaine.jpg',
                 'description' => 'Un magnifique coucher de soleil capturé au-dessus des forêts de la Motte',
                 'author' => 'Jean Martin',
                 'votes' => 0
@@ -14,6 +15,7 @@ if (!file_exists($dataFile)) {
             [
                 'id' => 2,
                 'title' => 'Faune sauvage',
+                'urlImage' => 'https://www.lebourgetdulac.fr/medias/2021/03/Enquete-faune-sauvage.jpg',
                 'description' => 'Un cerf en plein cœur de son habitat naturel',
                 'author' => 'Marie Dupont',
                 'votes' => 0
@@ -21,6 +23,7 @@ if (!file_exists($dataFile)) {
             [
                 'id' => 3,
                 'title' => 'Flore printanière',
+                'urlImage' => 'https://www.ferrierefleurs.com/wp-content/uploads/2024/11/plantes-fleuries-exterieur-annuelles_floraison-printaniere_jardinerie-ferriere-fleurs.jpg',
                 'description' => 'Les fleurs sauvages de la Motte au printemps',
                 'author' => 'Pierre Leclerc',
                 'votes' => 0
@@ -87,6 +90,7 @@ usort($data['photos'], function($a, $b) {
         <div class="photo-item">
           <h3><?php echo htmlspecialchars($photo['title']); ?></h3>
           <p><strong>Auteur :</strong> <?php echo htmlspecialchars($photo['author']); ?></p>
+          <img src="<?php echo htmlspecialchars($photo['urlImage']); ?>" alt="<?php echo htmlspecialchars($photo['title']); ?>">
           <p><?php echo htmlspecialchars($photo['description']); ?></p>
           <p><strong>Votes : <?php echo $photo['votes']; ?></strong></p>
           

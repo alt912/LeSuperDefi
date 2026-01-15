@@ -159,6 +159,16 @@ hr {
   margin-bottom: 0.8rem;
 }
 
+.photo-item img {
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 button {
   background: #1e3a5f;
   color: white;
